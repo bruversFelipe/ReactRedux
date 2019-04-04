@@ -14,7 +14,6 @@ function cadastraItens(state, action) {
 }
 
 function excluiItens(state, action) {
-  console.log("entrei exclui", action);
   return {
     ...state,
     dataSource: [...state.dataSource.filter(x => x.key !== action.item)]
